@@ -23,8 +23,8 @@ const ContactForm: React.FC = () => {
   return (
     <form 
           onSubmit={handleSubmit} 
-          className="bg-white shadow-lg p-6 
-          transform transition-all duration-300 hover:shadow-xl"
+          className="bg-white p-6 
+          transform transition-all duration-300 hover:shadow-xl "
         >
           <div className="space-y-8">
             {['First Name','Last Name', 'email', 'phone'].map((field) => (

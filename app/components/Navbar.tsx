@@ -34,18 +34,10 @@ const Navbar: React.FC = () => {
     services: {
       name: 'Services',
       items: [
-        { name: 'Detox & Withdrawal', href: '/services/detox' },
-        { name: 'Residential Treatment', href: '/services/residential' },
-        { name: 'Outpatient Programs', href: '/services/outpatient' },
-        { name: 'Mental Health', href: '/services/mental-health' }
-      ]
-    },
-    admissions: {
-      name: 'Admissions',
-      items: [
-        { name: 'Admission Process', href: '/admissions/process' },
-        { name: 'Insurance Coverage', href: '/admissions/insurance' },
-        { name: 'Patient Referral', href: '/admissions/referral' }
+        { name: 'Go to page', href:'/services'},
+        { name: 'Detox & Withdrawal', href: '/services#primary-services' },
+        { name: 'Community Housing', href: '/services#primary-services' },
+        { name: 'Treatments', href: '/services/#treatments' }
       ]
     }
   };
@@ -57,25 +49,32 @@ const Navbar: React.FC = () => {
   return (
     <div className="md:absolute top-0 left-0 right-0 z-50 bg-white md:bg-transparent shadow-lg md:shadow-none transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-6">
-        <div className="flex justify-between">
-        <span className="flex items-center justify-center rounded-full bg-indigo-500 w-14 h-14 md:hidden hover:scale-105 transition-transform duration-300">
-          <Phone className="w-6 h-6 text-white" />
-        </span>
+        <div className="flex justify-between items-center">
+           {/* Phone Icon - Positioned on the Right from Medium Screens */}
+           <Link 
+            href="tel:+14437123202" 
+            className="md:absolute md:right-4 md:top-2 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+          >
+            <Phone className="w-8 h-8 text-green-600" />
+          </Link>
           {/* Logo */}
-            <div className="flex items-center">
-              <Link href="/">
-                <Image 
-                  src="/logo.png" 
-                  alt="Absolute Wellness Services Logo"
-                  width={125}  
-                  height={50}  
-                  className="transition-transform duration-300 hover:scale-105"
-                />
-              </Link>
-            </div>
+          <div className="flex items-center">
+            <Link href="/">
+              <Image 
+                src="/logo.png" 
+                alt="Absolute Wellness Services Logo"
+                width={125}  
+                height={50}  
+                className="transition-transform duration-300 hover:scale-105"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
+           <Link href="/" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+              Home
+            </Link>
             {Object.entries(navigation).map(([key, section]) => (
               <div
                 key={key}
@@ -122,16 +121,17 @@ const Navbar: React.FC = () => {
               About
             </Link>
             
-            <Link href="/locations" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
-              Locations
+            <Link href="/insurance" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+              Insurance
             </Link>
 
-            <Link href="/contact" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+            <Link href="/admissions" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+              Admission
+            </Link>
+
+            <Link href="/contact" className=" px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
               Contact
             </Link>
-            <span className="flex items-center justify-center rounded-full bg-indigo-500 w-14 h-14 hover:scale-105 transition-transform duration-300">
-             <Phone className="w-6 h-6 text-white" />
-           </span>
           </div>
 
           {/* Mobile menu button */}
@@ -208,7 +208,7 @@ const Navbar: React.FC = () => {
           ))}
 
           <div className="space-y-2">
-            {['About', 'Locations', 'Contact',].map((item, index) => (
+            {['About','Insurance','Admissions','Contact'].map((item, index) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`}

@@ -2,6 +2,8 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import HomeLocationDiv from "./components/HomeLocationDiv";
 import Treatmentgrid from "./components/Treatmentgrid";
+import PromiseDiv from "./components/PromiseDiv";
+import HomeButtomDiv from "./components/HomeBottomDiv";
 
 export default function Home() {
   return (
@@ -14,6 +16,9 @@ export default function Home() {
          <h1 className="text-indigo-800 text-xl">Guiding You Through Recovery</h1>
         </div>
        <Treatmentgrid />
+       <PromiseDiv />
+       <hr className="border-t-1 border-double mx-auto w-3/4 border-gray-500 mb-6" />
+       <HomeButtomDiv /> 
     </div>
   ); 
 }

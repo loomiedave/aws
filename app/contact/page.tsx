@@ -2,8 +2,6 @@
 
 import LeafletMap from '../components/LeafletMap';
 import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
-
 const ContactPage: React.FC = () => {
   return (
     <div className="bg-white mx-auto animate-[fadeIn_1s_ease-in_forwards]">
@@ -13,7 +11,7 @@ const ContactPage: React.FC = () => {
           backgroundPosition: 'center'
         }}
       >
-      <div className="absolute inset-0 bg-indigo-900 bg-opacity-80 flex items-center justify-center">
+      <div className="absolute inset-0 bg-indigo-600/60 md:bg-gradient-to-b from-white via-white/0 to-indigo-900/80 via-30% flex items-center justify-center">
         <div className="text-center text-white px-6 space-y-6 animate-[fadeIn_1s_ease-in_forwards]">
           <h1 className="text-4xl md:text-6xl font-bold animate-[fadeIn_1s_ease-in_forwards]">
            Contact Us
@@ -38,7 +36,6 @@ const ContactPage: React.FC = () => {
          </div>
        </div>
       </div>
-      <Footer />
     </div>
   );
 };

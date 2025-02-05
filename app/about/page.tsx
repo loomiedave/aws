@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import About from '../components/About';
 
 const AboutPage: React.FC = () => {
   const peopleDetails = [
@@ -60,24 +61,40 @@ const AboutPage: React.FC = () => {
           backgroundPosition: 'center'
         }}
       >
-      <div className="absolute inset-0 bg-indigo-900 bg-opacity-80 flex items-center justify-center">
+      <div className="absolute inset-0 bg-indigo-600/60 md:bg-gradient-to-b from-white via-white/0 to-indigo-900/80 via-30% flex items-center justify-center">
         <div className="text-center text-white px-6 space-y-6 animate-[fadeIn_1s_ease-in_forwards]">
           <h1 className="text-5xl md:text-6xl font-bold animate-[fadeIn_1s_ease-in_forwards]">
-            LEADERSHIP TEAM
+            ABOUT US
           </h1>
           <div>
             <Link href="/contact">
               <button className="bg-indigo-600 hover:bg-indigo-700 
-                text-white font-bold py-3 px-6 rounded-lg
+                text-white font-bold py-3 px-6
                 transition-all duration-300 transform hover:scale-[1.05]">
-                Contact Us
+                CONTACT US
               </button>
             </Link>
           </div>
         </div>
        </div>
       </div>
+      <About />
 
+      <div className="relative h-[20vh] md:h-[50vh] flex justify-center items-center">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/leadership.jpg")',
+          backgroundPosition: 'center'
+        }}
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-indigo-800/70" />
+       <div className="relative text-center space-y-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-white">LEADERSHIP TEAM</h1>
+      </div>
+    </div>
       {/* People Section */}
       {peopleDetails.map((person) => (
       <div className="container mx-auto px-16 py-16">

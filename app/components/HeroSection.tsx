@@ -17,7 +17,6 @@ const HeroSection = () => {
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 z-0 bg-indigo-600/60 md:bg-gradient-to-b from-white via-white/0 to-indigo-900/80 via-30%" />
-      
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 sm:px-6 z-10">
         <hr className="border-t-1 border-double mx-auto w-3/4 border-gray-200 mb-8 sm:mb-16" />
@@ -30,11 +29,11 @@ const HeroSection = () => {
           treatment available on their path to recovery.
         </p>
         <Link
-          href="/get-started"
-          className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-lg text-base sm:text-lg opacity-0 animate-[fadeIn_1s_ease-in_0.6s_forwards]"
+          href="/contact"
+          className="group relative px-8 py-4 sm:px-8 sm:py-3 text-base sm:text-lg opacity-0 animate-[fadeIn_1s_ease-in_0.6s_forwards]"
         >
-          <span className="absolute inset-0 bg-white rounded-lg transition-all duration-300 group-hover:scale-105"></span>
-          <span className="relative text-purple-600 font-semibold">
+          <span className="absolute inset-0 bg-white transition-all duration-300 group-hover:scale-105"></span>
+           <span className="relative text-purple-600 text-xl font-semibold">
             Get Started
           </span>
         </Link>
