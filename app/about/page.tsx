@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
         `She holds dual National Board Certification with the American Academy of Nurse Practitioners 
         (AANP) and the American Nurses Credentialing Center (ANCC) as a Family Nurse Practitioner.`,
         `She obtained her advanced practice wound care certification from the Wound, Ostomy, and Continence Nursing Certification Board (WOCNCB). `,
-        `She is equally DOT certified. Dr. Survival Afuecheta adopts Myra Levine's
+        `She is equally DOT certified. Dr. Survival Afuecheta adopts Myra Levines
          Conservation Model of Nursing model, which emphasizes holistic and individualized patient care.
         She enjoys conducting Quality improvement research geared towards improving patient outcomes.  `
       ],
@@ -96,8 +96,8 @@ const AboutPage: React.FC = () => {
       </div>
     </div>
       {/* People Section */}
-      {peopleDetails.map((person) => (
-      <div className="container mx-auto px-16 py-16">
+      {peopleDetails.map((person,index) => (
+      <div key={index} className="container mx-auto px-16 py-16">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* People Image - Larger on PC */}
           <div className="flex justify-center">

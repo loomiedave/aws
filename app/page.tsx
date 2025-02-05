@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import HeroSection from "./components/HeroSection";
 import HomeLocationDiv from "./components/HomeLocationDiv";
 import Treatmentgrid from "./components/Treatmentgrid";

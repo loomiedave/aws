@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { LatLngExpression, Icon } from 'leaflet';
+import {  Icon } from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import markerShadowPng from "leaflet/dist/images/marker-shadow.png";
@@ -14,7 +14,7 @@ interface Location {
 
 const LeafletMap: React.FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);
-  const [locations, setLocations] = useState<Location[]>([
+  const [locations] = useState<Location[]>([
     { lat: 39.326665750000004, lng: -76.67903988024246, name: "3700 Liberty Heights Avenue" }
   ]);
 

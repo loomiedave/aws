@@ -35,7 +35,7 @@ const About = () => {
               Absolute Wellness Treatment Services is a comprehensive integrative healthcare 
               service that manages individuals with substance use disorder and other co-occurring 
               medical and mental health diagnoses. Our passion is to offer innovative, individualized,
-               evidenced-based, proven, and effective treatment. We understand that our patient's struggle
+               evidenced-based, proven, and effective treatment. We understand that the struggle of  our patient
                 with substance use disorder is unique, and we are here to guide you toward achieving complete
                  remission with confidence in our evidence-based practices. 
             </p>

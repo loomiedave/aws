@@ -31,8 +31,8 @@ const HomeLocationDiv = () => {
             <p>
               At Absolute Wellness Services, we are committed to offering compassionate, 
               evidence-based care to individuals facing substance use disorders (SUD). Our team understands 
-              that every person's journey to recovery is unique, which is why we tailor our approach to meet 
-              each client's specific needs. By utilizing proven treatment methods and a supportive environment, 
+              that the journey of every individual to recovery is unique, which is why we tailor our approach to meet 
+              specific needs. By utilizing proven treatment methods and a supportive environment, 
               we help individuals regain control of their lives with dignity and respect.
             </p>
             <p>
