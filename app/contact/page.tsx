@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import ContactForm from '../components/ContactForm';
+import Link from 'next/link';
 
 // Dynamically import LeafletMap with SSR disabled
 const LeafletMap = dynamic(() => import('../components/LeafletMap'), {
@@ -23,6 +24,11 @@ const ContactPage = () => {
             <h1 className="text-4xl md:text-6xl font-bold animate-[fadeIn_1s_ease-in_forwards]">
               Contact Us
             </h1>
+            <Link href="/">
+            <button className="hidden md:block md:mx-auto underline text-center text-indigo-200 hover:text-indigo-400 transition-all duration-300 transform hover:scale-[1.05]">
+                Home Page
+            </button>
+            </Link>
           </div>
         </div>
       </div>

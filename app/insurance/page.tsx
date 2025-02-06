@@ -19,6 +19,11 @@ function page() {
               <h1 className="text-5xl md:text-6xl font-bold animate-[fadeIn_1s_ease-in_forwards]">
                 INSURANCE
               </h1>
+              <Link href="/">
+            <button className="hidden md:block md:mx-auto underline text-center text-indigo-200 hover:text-indigo-400 transition-all duration-300 transform hover:scale-[1.05]">
+                Home Page
+            </button>
+            </Link>
             </div>
            </div>
           </div>

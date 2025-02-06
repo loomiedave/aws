@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="md:absolute top-0 left-0 right-0 z-50 bg-white md:bg-transparent shadow-lg md:shadow-none transition-all duration-300">
+    <div className="grid-cols-3 gap-4 md:absolute top-0 left-0 right-0 z-50 bg-white md:bg-transparent shadow-lg md:shadow-none transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
            {/* Phone Icon - Positioned on the Right from Medium Screens */}
@@ -72,9 +72,6 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-           <Link href="/" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
-              Home
-            </Link>
             {Object.entries(navigation).map(([key, section]) => (
               <div
                 key={key}
@@ -127,6 +124,12 @@ const Navbar: React.FC = () => {
 
             <Link href="/admissions" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
               Admission
+            </Link>
+
+            <Link href="https://absolutewellnessservices.com/" className="px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300"
+            target='_blank'
+            >
+              Outpatients
             </Link>
 
             <Link href="/contact" className=" px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-300">
@@ -208,7 +211,7 @@ const Navbar: React.FC = () => {
           ))}
 
           <div className="space-y-2">
-            {['About','Insurance','Admissions','Contact'].map((item, index) => (
+            {['About','Insurance','Admissions',].map((item, index) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -220,7 +223,19 @@ const Navbar: React.FC = () => {
                 {item}
               </Link>
             ))}
-
+            <Link
+            href="https://absolutewellnessservices.com/"
+            target='_blank'
+            className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-all duration-300"
+            >
+              Outpatients
+            </Link>
+            <Link
+            href="/contact"
+            className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-all duration-300"
+            >
+              Contact Us
+            </Link>
            <Link
             href="/"
             className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md transition-all duration-300"
@@ -228,7 +243,7 @@ const Navbar: React.FC = () => {
               Home
             </Link>
             <Link
-              href="/get-help"
+              href="/contact"
               className="block px-3 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md text-center transition-all duration-300 hover:scale-105"
             >
               Get Help Now

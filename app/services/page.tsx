@@ -6,7 +6,6 @@ interface ServiceCard {
   title: string;
   description: string;
   image: string;
-  link: string;
 }
 
 const ServicesPage: React.FC = () => {
@@ -14,26 +13,17 @@ const ServicesPage: React.FC = () => {
     {
       title: "Community Housing (BH)",
       description: "Integrated treatment for substance use disorders and mental health in a supportive community environment. Our housing program provides a stable foundation for recovery.",
-      image: "/communityhousing.jpg",
-      link: "/contact"
+      image: "/communityhousing.jpg"
     },
     {
       title: "Detoxification/Withdrawal Management",
       description: "Professional residential care for substance use disorders and addictions. Our medical team provides 24/7 support through the withdrawal process with evidence-based protocols.",
-      image: "/detox.jpg",
-      link: "/contact"
-    },
-    {
-      title: "Outpatient Treatment (BH)",
-      description: "Flexible integrated treatment programs for substance use disorders and mental health, allowing you to maintain daily responsibilities while receiving care.",
-      image: "/outpatient-treatment.jpg",
-      link: "/contact"
+      image: "/detox.jpg"
     },
     {
       title: "Residential Treatment (BH)",
       description: "Comprehensive integrated care for substance use disorders and mental health in a structured residential setting.",
-      image: "/residential.jpg",
-      link: "/contact"
+      image: "/residential.jpg"
     }
   ];
 
@@ -57,17 +47,11 @@ const ServicesPage: React.FC = () => {
       image: "/aftercare.jpg"
     },
     {
-      title: "Intensive Outpatient Program",
-      description: "Structured outpatient treatment providing comprehensive care while maintaining daily life responsibilities.",
-      ctaText: "Explore Program",
-      image: "/iop.jpg"
-    },
-    {
       title: "Residential Rehab",
       description: "We offer housing assistance while we continue to foster relapse prevention.",
       ctaText: "Find Support",
       image: "/rehab.jpg"
-    }
+    },
   ];
 
   return (
@@ -85,6 +69,11 @@ const ServicesPage: React.FC = () => {
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
               Comprehensive care for mental health and substance use disorders
             </p>
+            <Link href="/">
+            <button className="hidden md:block md:mx-auto underline text-center text-indigo-200 hover:text-indigo-400 transition-all duration-300 transform hover:scale-[1.05]">
+                Home Page
+            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -105,14 +94,29 @@ const ServicesPage: React.FC = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-indigo-900 mb-4">{service.title}</h3>
                 <p className="text-gray-700 mb-4">{service.description}</p>
-                <Link href={service.link}>
-                  <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition-all duration-300">
+              </div>
+            </div>
+          ))}
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden transform transition-all      duration-300 hover:scale-[1.02]">
+              <div className="relative h-64">
+                <Image
+                  src='/outpatient-treatment.jpg'
+                  alt='outpatient'
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-indigo-900 mb-4">Outpatient Treatment (BH)</h3>
+                <p className="text-gray-700 mb-4">Flexible integrated treatment programs for substance use disorders and mental health, allowing you to maintain daily responsibilities while receiving care.</p>
+                <Link href="https://absolutewellnessservices.com/"
+                  target="_blank">
+                  <button className="bg-indigo-600 hover:bg-indigo-400 text-white font-bold py-2 px-4 rounded transition-all duration-300">
                     Learn More
                   </button>
                 </Link>
               </div>
             </div>
-          ))}
         </div>
       </div>
 
@@ -150,6 +154,31 @@ const ServicesPage: React.FC = () => {
                 </div>
               </div>
             ))}
+              <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="relative h-[400px] md:h-full">
+                    <Image
+                      src='/iop.jpg'
+                      alt='Intensive Outpatient Program'
+                      layout="fill"
+                    />
+                  </div>
+                  <div className="p-8 flex flex-col justify-center">
+                    <h3 className="text-3xl font-bold text-indigo-900 mb-4">
+                      Intensive Outpatient Program
+                    </h3>
+                    <p className="text-gray-700 mb-6">
+                      Structured outpatient treatment providing comprehensive care while maintaining daily life responsibilities
+                    </p>
+                    <Link href="https://absolutewellnessservices.com/" 
+                          target='_blank'>
+                      <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 self-start">
+                        Explore Program
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>

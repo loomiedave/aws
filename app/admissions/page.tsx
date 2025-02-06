@@ -41,6 +41,11 @@ const AdmissionsPage: React.FC = () => {
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
               Your Journey to Recovery Starts Here
             </p>
+            <Link href="/">
+            <button className="hidden md:block md:mx-auto underline text-center text-indigo-200 hover:text-indigo-400 transition-all duration-300 transform hover:scale-[1.05]">
+                Home Page
+            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -93,7 +98,7 @@ const AdmissionsPage: React.FC = () => {
           </p>
           <div className="space-x-4">
             <Link href="/contact">
-              <button className="bg-white text-indigo-900 hover:bg-indigo-50 font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300">
+              <button className="bg-white text-indigo-900 hover:bg-indigo-50 font-bold py-3 px-8 rounded-lg text-lg transition-all duration-300 mb-4">
                 Contact Admissions
               </button>
             </Link>
