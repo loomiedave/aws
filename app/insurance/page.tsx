@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Phone } from 'lucide-react'
 import ContactDiv from '../components/ContactDiv';
+import Slider from '../components/Slider';
 
 function page() {
     return (
@@ -36,29 +36,19 @@ function page() {
                  At AWS, we are committed to providing accessible and comprehensive care for those seeking recovery.  
                  We understand the struggles associated with addiction and offer seamless efforts to foster treatment compliance by working with major insurance companies to provide all the help needed in your recovery.  
                 </p>
-                <h3 className="text-2xl mb-3 text-indigo-900">
-                 In-Network Insurance Plans 
-                </h3>
-                <p className="text-md md:text-md text-gray-900 mb-4">
-                 Hygea Healthcare is proud to accept CareFirst in-network insurance plans, offering coverage for our specialized services, including detox. , behavioral health services, and wound care .
-                </p>
-                <Image 
-                    src='/carefirst.png'
-                    alt='carefirst'
-                    width={500}
-                    height={500}
-                    />
                 <h4 className="text-l mb-3 font-bold text-indigo-900">
                  Other insurance accepted include : 
                 </h4>
                 <ol className="text-md md:text-md text-gray-900 mb-4 list-disc pl-3 space-y-2">
-                 <li>Medical/Health Choice</li>
+                 <li>Medicaid</li>
                  <li>Medicare</li>
                  <li>Aetna</li>
                  <li>BlueCross BlueShield (all HMO ad PPO)</li>
                  <li>CareFirst (all HMO and PPO)</li>
                  <li>Cigna</li>
                 </ol>
+
+                <Slider />
                 <h3 className="text-2xl mb-3 font-bold text-indigo-900">
                  OUR PATIENT REFERRAL FORM 
                 </h3>

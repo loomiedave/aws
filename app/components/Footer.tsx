@@ -17,8 +17,9 @@ const Footer = () => {
   ];
 
   const addresses = [
-    '700 Liberty Heights Avenue, Baltimore, MD 21215',
-    'TBA Office 1 (Outpatient clinic) : 516 N Rolling Rd Catonsville, MD 21228',
+    '3700 Liberty Heights Avenue, Baltimore, MD 21215',
+    'Office (Outpatient clinic) : 516 N Rolling Rd Catonsville, MD 21228',
+    'Residential Treatment - TBA'
   ];
 
   return (
@@ -30,7 +31,7 @@ const Footer = () => {
             <Image 
               src="/logo.png" 
               alt="Absolute Wellness Services Logo"
-              width={125}  
+              width={150}  
               height={50}  
               className="transition-transform duration-300 w hover:scale-105 md:w-[200px] md:h-[125px] lg:w-[250px] lg:h-[175px]"
             />

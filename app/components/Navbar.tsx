@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
               <Image 
                 src="/logo.png" 
                 alt="Absolute Wellness Services Logo"
-                width={125}  
+                width={150}  
                 height={50}  
                 className="transition-transform duration-300 hover:scale-105"
               />

@@ -19,8 +19,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0 bg-indigo-600/60 md:bg-gradient-to-b from-white via-white/0 to-indigo-900/80 via-30%" />
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 sm:px-6 z-10">
-        <hr className="border-t-1 border-double mx-auto w-3/4 border-gray-200 mb-8 sm:mb-16" />
-        <h1 className="max-w-6xl text-xl sm:text-2xl md:text-5xl font-bold mb-4 sm:mb-6 opacity-0 animate-[fadeIn_1s_ease-in_forwards] text-white drop-shadow-xl">
+        <hr className=" border-t-1 border-double mx-auto w-3/4 border-gray-200 md:hidden sm:mb-16" />
+        <h1 className="max-w-6xl text-xl sm:text-2xl md:text-4xl font-bold mb-4 md:pt-28 sm:mb-6 opacity-0 animate-[fadeIn_1s_ease-in_forwards] text-white drop-shadow-xl">
           ABSOLUTE WELLNESS SERVICES: Your comprehensive solution for addiction treatment and mental health services.
         </h1>
         <p className="text-base sm:text-xl mb-4 sm:mb-16 opacity-0 animate-[fadeIn_1s_ease-in_0.3s_forwards] text-white/90 drop-shadow">

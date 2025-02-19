@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
                 placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
                 value={formData[field as keyof typeof formData]}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded 
+                className="w-full px-3 text-gray-800 py-2 border rounded 
                 transition-all duration-300 
                 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
               placeholder="How can we help you?"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded 
+              className="w-full text-gray-800 px-3 py-2 border rounded 
               transition-all duration-300 
               focus:outline-none focus:ring-2 focus:ring-blue-500"
               rows={4}

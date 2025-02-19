@@ -54,16 +54,21 @@ const LeafletMap: React.FC = () => {
         </Marker>
       ))}
      </MapContainer>
-     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 p-4">
+     <div className="grid grid-cols-1 gap-8 mt-6 p-4">
         <div className="space-y-2 p-4 max-w-md">
           <h2 className="text-indigo-800 text-2xl font-semibold">Address</h2>
           <p className="text-gray-700 font-semibold text-xl">Baltimore</p>
-          <p className="text-gray-700 text-xl break-words">700 Liberty Heights Avenue, Baltimore, MD 21215</p>
+          <p className="text-gray-700 text-xl break-words">3700 Liberty Heights Avenue, Baltimore, MD 21215</p>
         </div>
         <div className="space-y-2 p-4 max-w-md">
-          <h2 className="text-indigo-800 text-2xl font-semibold">Recovery Houses</h2>
-          <p className="text-gray-700 font-semibold text-xl">TBA  Office 1 (Outpatient clinic)</p>
-          <p className="text-gray-700 text-xl break-words">516 N Rolling Rd Catonsville, MD 21228</p>
+          <h2 className="text-indigo-800 text-2xl font-semibold">Recovery Houses</h2>  
+          <p className='text-gray-700 break-words font-semibold font-italics text-lg'>TBA</p> 
+        </div>
+        <div className="space-y-2 p-4 max-w-md">
+          <h2 className="text-indigo-800 text-2xl font-semibold break-words">Office(Outpatient clinic)</h2>
+          <p className="text-gray-900 break-words text-lg"> 516 N Rolling Rd Catonsville, MD 21228 
+            <span className='text-gray-600 break-words'> (By Appointment Only).</span>
+          </p>
         </div>
      </div>
     </div>

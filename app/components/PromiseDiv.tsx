@@ -35,7 +35,7 @@ const PromiseDiv = () => {
   ];
 
   return (
-    <div className="relative mb-4 md:h-[100vh] ">
+    <div className="relative mb-4 md:h-[150vh] ">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
