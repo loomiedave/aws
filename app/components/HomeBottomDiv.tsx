@@ -16,8 +16,8 @@ const HomeBottomDiv = () => {
       <div className=" absolute inset-0 bg-indigo-800/70 backdrop-blur-md" />
       <div className="relative text-center space-y-4 py-12 px-4">
         <h1 className="text-3xl md:text-5xl font-bold text-center text-white">Have questions or need support?</h1>
-        <h2 className="text-xl md:text-2xl font-bold text-center">We Are Ready to Help</h2>
-        <p className="text-md md:text-xl text-center">Reach out to our compassionate team for assistance and guidance on your road to recovery.</p>
+        <h2 className="text-xl text-white md:text-2xl font-bold text-center">We Are Ready to Help</h2>
+        <p className="text-md md:text-xl text-white text-center">Reach out to our compassionate team for assistance and guidance on your road to recovery.</p>
         <p>
           <Link href="/contact">
             <button 
